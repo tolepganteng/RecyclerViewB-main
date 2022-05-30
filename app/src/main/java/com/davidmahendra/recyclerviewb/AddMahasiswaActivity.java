@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -68,6 +69,8 @@ public class AddMahasiswaActivity extends AppCompatActivity {
                         "&jp" + jp +
                         "&statusNikah" + statusNikah +
                         "&tahunMasuk" + tahunMasuk;
+
+                Log.d("*tw*", url);
 
                 AsyncHttpClient ahc = new AsyncHttpClient();
 
